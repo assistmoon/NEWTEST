@@ -14,10 +14,14 @@
   <link rel="stylesheet" href="assets/css/uikit.min.css" />
   <link rel="stylesheet" href="assets/css/doc.css" />
   <link rel="stylesheet" href="assets/css/components/sticky.css" />
+  <link rel="stylesheet" href="assets/css/components/slideshow.css" />
+  <link rel="stylesheet" href="assets/css/components/dotnav.css" />
+  <link rel="stylesheet" href="assets/css/components/slidenav.css" />
   <!-- link all the scripts -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/uikit.min.js"></script>
   <script src="assets/js/components/sticky.js"></script>
+  <script src="assets/js/components/slideshow.js"></script>
 
   <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -217,6 +221,30 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
+    </div>
+    <hr>
+    <!-- 图片遮罩 -->
+    <!-- <div class="">
+      <figure class="uk-overlay uk-overlay-hover">
+        <img src="pic/placeholder_400x200.svg" alt="">
+        <figcaption class="uk-overlay-panel">
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </figcaption>
+      </figure>
+    </div> -->
+    <hr>
+    <div class="uk-slidenav-position" data-uk-slideshow>
+      <ul class="uk-slideshow" >
+        <li><img src="pic/placeholder_800x400_1.jpg" alt=""></li>
+        <li><img src="pic/placeholder_800x400_2.jpg" alt=""></li>
+        <li><img src="pic/placeholder_800x400_3.jpg" alt=""></li>
+      </ul>
+      <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href="">1</a></li>
+        <li data-uk-slideshow-item="1"><a href="">2</a></li>
+        <li data-uk-slideshow-item="2"><a href="">3</a></li>
+      </ul>
     </div>
   </div>
 
