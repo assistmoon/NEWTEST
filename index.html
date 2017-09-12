@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="assets/css/components/dotnav.css" />
   <link rel="stylesheet" href="assets/css/components/slidenav.css" />
   <!-- link all the scripts -->
-  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/jquery-2.1.4.js"></script>
   <script src="assets/js/uikit.min.js"></script>
   <script src="assets/js/components/sticky.js"></script>
   <script src="assets/js/components/slideshow.js"></script>
+  <script src="assets/js/components/slideshow-fx.js"></script>
 
   <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,7 +34,7 @@
 </head>
 
 <body>
-  <div class="bar">
+  <!-- <div class="bar">
     <nav class="uk-navbar" data-uk-sticky >
       <div class="uk-container uk-container-center">
         <a href="#" class="uk-navbar-brand"><i class="uk-icon uk-icon-github"></i></a>
@@ -77,7 +78,7 @@
       </div>
     </div>
   </div>
-  <hr>
+  <hr> -->
   <div class="uk-container uk-container-center">
     <!-- <div class="uk-text-center">
         <div class="uk-grid uk-grid-match uk-grid-small">
@@ -183,7 +184,7 @@
         </article>
       </div> -->
     <!-- 下拉菜单 -->
-    <div class="uk-button-dropdown" data-uk-dropdown>
+    <!-- <div class="uk-button-dropdown" data-uk-dropdown>
       <button type="button" name="button" class="uk-button uk-button-danger">
             Hover
             <i class="uk-icon-caret-down"></i>
@@ -197,8 +198,8 @@
           <li><a href="#">下拉菜单5</a></li>
         </ul>
       </div>
-    </div>
-    <div class="uk-button-group">
+    </div> -->
+    <!-- <div class="uk-button-group">
       <button class="uk-button uk-button-primary">Button</button>
       <div class="" data-uk-dropdown="{mode:'click'}">
         <button class="uk-button"><i class="uk-icon-caret-down"></i></button>
@@ -209,10 +210,10 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <hr>
     <!-- 拟态对话框 -->
-    <div class="">
+    <!-- <div class="">
       <button class="uk-button" data-uk-modal="{target:'#my-modal'}" type="button" name="button">button</button>
       <div class="uk-modal" id="my-modal">
         <div class="uk-modal-dialog">
@@ -222,7 +223,7 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr> -->
     <!-- 图片遮罩 -->
     <!-- <div class="">
       <figure class="uk-overlay uk-overlay-hover">
@@ -234,19 +235,60 @@
       </figure>
     </div> -->
     <hr>
-    <div class="uk-slidenav-position" data-uk-slideshow>
-      <ul class="uk-slideshow" >
-        <li><img src="pic/placeholder_800x400_1.jpg" alt=""></li>
-        <li><img src="pic/placeholder_800x400_2.jpg" alt=""></li>
-        <li><img src="pic/placeholder_800x400_3.jpg" alt=""></li>
+    <div class="uk-slidenav-position" data-uk-slideshow="{kenburns:'30s'}">
+      <ul class="uk-slideshow uk-overlay-active">
+        <li>
+          <img src="pic/placeholder_800x400_1.jpg" alt="">
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-bottom">
+            <h3>This is a title</h3>
+            <p>默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。</p>
+
+          </div>
+
+        </li>
+        <li>
+          <img src="pic/placeholder_800x400_2.jpg" alt="">
+        </li>
+        <li>
+          <img src="pic/placeholder_800x400_3.jpg" alt="">
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+
+          </div>
+        </li>
       </ul>
+      <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+
+      </div>
+      <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
       <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-        <li data-uk-slideshow-item="0"><a href="">1</a></li>
-        <li data-uk-slideshow-item="1"><a href="">2</a></li>
-        <li data-uk-slideshow-item="2"><a href="">3</a></li>
+        <li class="uk-active" data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="">
+      <figure class="uk-overlay uk-overlay-hover">
+        <img src="pic/placeholder_400x200.svg" alt="">
+        <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="pic/placeholder_800x400_1.jpg" alt="">
+      </figure>
+    </div>
+    <hr>
+    <div class="">
+      <ul>
+        <li class="uk-overlay uk-overlay-hover">
+          <img src="pic/placeholder_400x200.svg" alt="">
+          <div class="uk-overlay-panel uk-overlay-slide-top">
+            <h3>This is a title</h3>
+            <p>默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。默认情况下，遮罩层是可见的。</p>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
+
+
 
 </body>
 
