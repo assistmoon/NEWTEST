@@ -22,6 +22,9 @@
   <script src="assets/js/uikit.min.js"></script>
   <script src="assets/js/components/sticky.js"></script>
   <script src="assets/js/components/slideshow.js"></script>
+  <script src="assets/js/components/parallax.js"></script>
+  <script src="assets/js/components/grid.js"></script>
+  <script src="assets/js/components/pagination.js"></script>
 
   <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,23 +36,8 @@
 </head>
 
 <body>
-  <!-- <div class="uk-container uk-container-center">
-    <hr>
-    <div class="uk-slidenav-position" data-uk-slideshow>
-      <ul class="uk-slideshow" >
-        <li><img src="pic/placeholder_800x400_1.jpg" alt=""></li>
-        <li><img src="pic/placeholder_800x400_2.jpg" alt=""></li>
-        <li><img src="pic/placeholder_800x400_3.jpg" alt=""></li>
-      </ul>
-      <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-text-center">
-        <li data-uk-slider-item="0"><a href="">1</a></li>
-        <li data-uk-slider-item="1"><a href="">2</a></li>
-        <li data-uk-slider-item="2"><a href="">3</a></li>
-      </ul>
-    </div>
-  </div> -->
   <div class="uk-container uk-container-center">
-    <div class="uk-slidenav-position" data-uk-slideshow>
+    <!-- <div class="uk-slidenav-position" data-uk-slideshow>
       <ul class="uk-slideshow">
         <li><img src="pic/placeholder_800x400_1.jpg" alt=""></li>
         <li><img src="pic/placeholder_800x400_3.jpg" alt=""></li>
@@ -62,6 +50,54 @@
         <li class="uk-active" data-uk-slideshow-item="1"><a href=""></a></li>
         <li data-uk-slideshow-item="2"><a href=""></a></li>
       </ul>
+    </div> -->
+    <!-- 视差：依赖于页面滚动条位置的动态css特性 -->
+    <hr>
+    <div data-uk-grid class="uk-grid-width-small-1-2 uk-grid-width-medium-1-4 grid-heights">
+      <div class="uk-panel">
+        1
+      </div>
+      <div class="uk-panel">
+        1
+      </div>
+      <div class="uk-panel">
+        1
+      </div>
+      <div class="uk-panel">
+        1
+      </div>
+      <div class="uk-panel">
+        1
+      </div>
+      <div class="uk-panel">
+        1
+      </div>
+    </div>
+    <hr>
+    <div class="">
+      <ul class="uk-pagination" data-uk-pagination="items:100,itemsOnPage:10">
+
+      </ul>
+    </div>
+    <hr>
+    <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'my-autocomplete.json'}">
+      <input type="text">
+    <script type="text/autocomplete">
+        <ul class="uk-nav uk-nav-autocomplete uk-autocomplete-results">
+            {{~items}}
+            <li data-value="{{ $item.value }}">
+                <a>
+                    {{ $item.title }}
+                    <div>{{{ $item.text }}}</div>
+                </a>
+            </li>
+            {{/items}}
+        </ul>
+    </script>
+    </div>
+    <hr>
+    <div class="uk-autocomplete uk-form" data-uk-autocomplete="{source:'my-autocomplete.json'}">
+      <input type="text">
     </div>
   </div>
 </body>

@@ -27,3 +27,7 @@ p {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+.grid-heights > div {
+  height: 80px;
+}
